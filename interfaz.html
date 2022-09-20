@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace a Bootstrap-->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+        crossorigin="anonymous"
+    >
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Interfaz</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-3 rounded bg-white">
+        <div class="row py-3">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <h2>Formulario de lenguaje</h2>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Lenguaje</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Lenguaje" autofocus>
+                    </div>
+                    <div class="mb-3">
+                        <label for="programadores" class="form-label">Número de Porgramadores</label>
+                        <input type="number" class="form-control" id="programadores" placeholder="Ingrese número">
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripcion</label>
+                        <textarea class="form-control" id="descripcion" rows="3" placeholder="Descripción del lenguaje de programación"></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-success">Guardar</button>
+                        <button class="btn btn-secondary">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <h2>Listado de lenguajes</h2>
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Lenguaje</th>
+                            <th class="text-center">Cantidad de programadores</th>
+                            <th class="text-center">Descripcion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">1</td>
+                            <td class="text-center">JavaScript</td>
+                            <td class="text-center">21</td>
+                            <td class="text-center">Texto de ejemplo</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2</td>
+                            <td class="text-center">Python</td>
+                            <td class="text-center">110</td>
+                            <td class="text-center">Texto de ejemplo</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">3</td>
+                            <td class="text-center">C#</td>
+                            <td class="text-center">45</td>
+                            <td class="text-center">Texto de ejemplo</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">4</td>
+                            <td class="text-center">Ruby</td>
+                            <td class="text-center">31</td>
+                            <td class="text-center">Texto de ejemplo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
